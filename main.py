@@ -186,7 +186,7 @@ class BatchRequest(BaseModel):
     limit: int = 10
 
 
-@fastapi_app.get("/")
+@fastapi_app.get("/info")
 def root():
     return {
         "app": "ICMR + HITEK Search API",
